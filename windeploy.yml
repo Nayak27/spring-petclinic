@@ -8,8 +8,8 @@
    tasks:
      - name: Applying Latest Build
        win_copy:
-         src: /opt/JenkinsHome/workspace/TestPipeline/target/petclinic.war
-         dest: C:\Program Files\Apache Software Foundation\Tomcat 9.0\webapps\
+         src: /opt/JenkinsHome/workspace/TestPipeline/target/spring-petclinic-2.1.0.BUILD-SNAPSHOT.jar
+         dest: C:\Program Files\Apache Software Foundation\Tomcat 9.0\webapps\petclinic.jar
      - name: Restart Tomcat service
        win_service:
          name: Tomcat9
